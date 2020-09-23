@@ -1,0 +1,4 @@
+ResourcePack=C:\Users\Frenc\source\repos\App2\App2\bin\ARM\Release\Upload\App2_1.0.2.0\App2_1.0.2.0-scale-100.appx
+ResourcePack=C:\Users\Frenc\source\repos\App2\App2\bin\ARM\Release\Upload\App2_1.0.2.0\App2_1.0.2.0-scale-125.appx
+ResourcePack=C:\Users\Frenc\source\repos\App2\App2\bin\ARM\Release\Upload\App2_1.0.2.0\App2_1.0.2.0-scale-150.appx
+ResourcePack=C:\Users\Frenc\source\repos\App2\App2\bin\ARM\Release\Upload\App2_1.0.2.0\App2_1.0.2.0-scale-400.appx

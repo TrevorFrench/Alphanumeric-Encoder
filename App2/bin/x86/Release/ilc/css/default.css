@@ -1,0 +1,63 @@
+﻿﻿body {
+    /* Uncomment this to enable scrolling and zooming*/
+    touch-action: manipulation;
+    overflow: scroll;
+}
+
+#panel0, #panel1, #panel2, #panel3 {
+    display: none;
+}
+
+.flex-child:first-child {
+    margin-right: 10px;
+}
+
+
+output, textarea, p, input {
+    display: block;
+    margin-top: 2em;
+    font-family: monospace;
+    font-size: .8em;
+}
+
+option {
+    text-align: center;
+    display: block;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+.content {
+    height: 100%;
+    margin-left: 1px;
+    flex: 1;
+}
+
+.encrypt {
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.results {
+    height: 100%;
+    margin-right: 1px;
+    flex: 1;
+}
+
+input {
+    max-width: 500px;
+    margin: auto;
+}
+
+select {
+    max-width: 500px;
+    margin: auto;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}

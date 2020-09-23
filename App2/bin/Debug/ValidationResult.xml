@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT xml:lang="en-US" OVERALL_RESULT="FAIL" VERSION="10.0.17763.132" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=3D42CE8A-2E4C-4B8D-9D8F-538B946EF33B" APP_NAME="" APP_VERSION="" OSVERSION="10.0.18362.0" OS="Microsoft Windows 10 Home" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="9/20/2020 2:15:06 PM" ID="9a83de6d5b17a7d01219892079e51562">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="10" TITLE="Deployment and launch tests" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience.">
+      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:01s.28ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="System.NullReferenceException: Object reference not set to an instance of an object.    at Microsoft.Windows.SoftwareLogo.Tests.Utility.IsPackageWWA(AppXPackage package)    at Microsoft.Windows.SoftwareLogo.Tests.BytecodeGenerationCheck.BytecodeGenerationCheck.ExecuteSharedValidation(String manifestFilePath, String packageFullName)    at Microsoft.Windows.SoftwareLogo.TestBase.TestBase.ExecuteTest()" />
+        </MESSAGES>
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+      <TEST INDEX="79" NAME="Background tasks cancelation handler" DESCRIPTION="App should implement event handler to handle background task cancelation request." EXECUTIONTIME="00h:00m:07s.38ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="System.NullReferenceException: Object reference not set to an instance of an object.    at Microsoft.Windows.SoftwareLogo.Tests.CancelationHandlerValidation.CancelationHandlerValidation.ExecuteSharedValidation(String manifestFilePath, String packageFullName)    at Microsoft.Windows.SoftwareLogo.TestBase.TestBase.ExecuteTest()" />
+        </MESSAGES>
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+      <TEST INDEX="81" NAME="Platform version launch" DESCRIPTION="App should not mis-use OSVersionInfo API to provide users functionality that is specific to the OS." EXECUTIONTIME="00h:00m:06s.31ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="System.NullReferenceException: Object reference not set to an instance of an object.    at Microsoft.Windows.SoftwareLogo.Tests.Utility.LaunchAppTest(String packageFullName, String manifestFilePath, String testName)    at Microsoft.Windows.SoftwareLogo.Tests.HighOSVersionLaunchCheck.HighOSVersionLaunchCheck.Test(UapApp uapApp)    at Microsoft.Windows.SoftwareLogo.TestBase.TestBase.ExecuteTest()" />
+        </MESSAGES>
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+      <TEST INDEX="47" NAME="App launch" DESCRIPTION="App launch tests." EXECUTIONTIME="00h:00m:05s.81ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="System.NullReferenceException: Object reference not set to an instance of an object.    at Microsoft.Windows.SoftwareLogo.Tests.Utility.LaunchAppTest(String packageFullName, String manifestFilePath, String testName)    at Microsoft.Windows.SoftwareLogo.Tests.LaunchAppCheck.LaunchAppCheck.Test(UapApp uapApp)    at Microsoft.Windows.SoftwareLogo.TestBase.TestBase.ExecuteTest()" />
+        </MESSAGES>
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:03s.36ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="System.NullReferenceException: Object reference not set to an instance of an object.    at Microsoft.Windows.SoftwareLogo.Tests.WindowsErrorReporting.WindowsErrorReporting.ExecutePostTest(TaskData taskData)    at Microsoft.Windows.SoftwareLogo.Tests.WindowsErrorReporting.WindowsErrorReporting.ExecuteTest()" />
+        </MESSAGES>
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="12" TITLE="Package compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
+      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:01s.26ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="System.NullReferenceException: Object reference not set to an instance of an object.    at Microsoft.Windows.SoftwareLogo.Tests.ApplicationCount.ApplicationCount.ExecuteSharedTests(EnumApplicationType appType, String manifestFilePath)    at Microsoft.Windows.SoftwareLogo.TestBase.TestBase.ExecuteTest()" />
+        </MESSAGES>
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:01s.59ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="Package 11128TrevorFrench.AlphanumericEncoder_1.0.0.0_neutral__96t6tg2pngd06 could not be found" />
+        </MESSAGES>
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+      <TEST INDEX="75" NAME="Package size" DESCRIPTION="Package file size should not be greater than 4 gigabytes." EXECUTIONTIME="00h:00m:02s.52ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="90" NAME="Resource Packages" DESCRIPTION="Check if any resource packages contain PE files." EXECUTIONTIME="00h:00m:01s.24ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="83" NAME="Restricted namespace" DESCRIPTION="Check if any restricted namespace is referenced in the app package manifest." EXECUTIONTIME="00h:00m:01s.31ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:01s.95ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:01s.66ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:01s.75ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
+      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:01s.84ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="The version specified by OSMinVersion attribute is not valid." />
+          <MESSAGE TEXT="An error occurred in the SupportedApis test." />
+        </MESSAGES>
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="19" TITLE="App manifest resources tests" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
+      <TEST INDEX="45" NAME="App resources" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.71ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="The test was blocked from execution. Please try re-running the validation. If the test execution remains blocked then please contact support." />
+        </MESSAGES>
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+      <TEST INDEX="61" NAME="Branding" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:01s.21ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Program Files\windowsapps\11128trevorxxxxh.alphanumericencoder_1.0.0.0_neutral__96t6tg2pngd06\AppXManifest.xml'.    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)    at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)    at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)    at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)    at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)    at System.Xml.XmlTextReaderImpl.FinishInitUriString()    at System.Xml.XmlReaderSettings.CreateReader(String inputUri, XmlParserContext inputContext)    at System.Xml.Linq.XDocument.Load(String uri, LoadOptions options)    at Microsoft.Windows.SoftwareLogo.Shared.AppxProgramInventoryHelper.GetAllImagesFromManifestFile(String appxManifestFile, String packageFullName)    at Microsoft.Windows.SoftwareLogo.Tests.BrandingValidation.BrandingValidation.ExecuteSharedTests(String packageFullName, String manifestFilePath)    at Microsoft.Windows.SoftwareLogo.TestBase.TestBase.ExecuteTest()" />
+        </MESSAGES>
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:01s.31ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="21" TITLE="File encoding test" RATIONALE="Packages containing an HTML5 Windows Store app must have correct file encoding.">
+      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:01s.31ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="System.NullReferenceException: Object reference not set to an instance of an object.    at Microsoft.Windows.SoftwareLogo.Tests.Utility.IsPackageWWA(AppXPackage package)    at Microsoft.Windows.SoftwareLogo.Tests.FileEncodingCheck.FileEncodingCheck.ExecuteSharedTests(String packageFullName, String manifestFilePath)    at Microsoft.Windows.SoftwareLogo.TestBase.TestBase.ExecuteTest()" />
+        </MESSAGES>
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
+      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.27ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+      <TEST INDEX="57" NAME="Type location" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+      <TEST INDEX="55" NAME="Type name case-sensitivity" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+      <TEST INDEX="54" NAME="Type name correctness" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+      <TEST INDEX="58" NAME="General metadata correctness" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+      <TEST INDEX="53" NAME="Properties" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
+      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:01s.24ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Program Files\windowsapps\11128trevorxxxxh.alphanumericencoder_1.0.0.0_neutral__96t6tg2pngd06\AppXManifest.xml'.    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)    at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)    at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)    at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)    at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)    at System.Xml.XmlTextReaderImpl.FinishInitUriString()    at System.Xml.XmlReaderSettings.CreateReader(String inputUri, XmlParserContext inputContext)    at System.Xml.Linq.XDocument.Load(String uri, LoadOptions options)    at Microsoft.Windows.SoftwareLogo.Tests.PlatformAppropriateFiles.PlatformAppropriateFiles.ExecuteSharedTests(String manifestFilePath)    at Microsoft.Windows.SoftwareLogo.TestBase.TestBase.ExecuteTest()" />
+        </MESSAGES>
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+      <TEST INDEX="66" NAME="Supported directory structure check" DESCRIPTION="Validate each file in the package for that the file name length should be less than MAX_PATH." EXECUTIONTIME="00h:00m:01s.10ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Program Files\windowsapps\11128trevorxxxxh.alphanumericencoder_1.0.0.0_neutral__96t6tg2pngd06'.    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)    at System.IO.FileSystemEnumerableIterator`1.CommonInit()    at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)    at System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)    at Microsoft.Windows.SoftwareLogo.Tests.SupportedDirectoryStructure.SupportedDirectoryStructure.AnalyzeAllFiles(String filePath)    at Microsoft.Windows.SoftwareLogo.Tests.SupportedDirectoryStructure.SupportedDirectoryStructure.ExecuteSharedTests(String manifestFilePath)    at Microsoft.Windows.SoftwareLogo.TestBase.TestBase.ExecuteTest()" />
+        </MESSAGES>
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="27" TITLE="Resource Usage Test" RATIONALE="WinJS background tasks need to call close() to free resource.">
+      <TEST INDEX="68" NAME="WinJS background task" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:03s.27ms" OPTIONAL="FALSE">
+        <MESSAGES>
+          <MESSAGE TEXT="System.NullReferenceException: Object reference not set to an instance of an object.    at Microsoft.Windows.SoftwareLogo.Tests.Utility.IsPackageWWA(AppXPackage package)    at Microsoft.Windows.SoftwareLogo.Tests.CloseBackgroundTasksCheck.CloseBackgroundTasksCheck.ExecuteSharedTests(String packageFullName, String manifestFilePath)    at Microsoft.Windows.SoftwareLogo.TestBase.TestBase.ExecuteTest()" />
+        </MESSAGES>
+        <RESULT><![CDATA[FAIL]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="11128TrevorFrench.AlphanumericEncoder" Type="Application" Source="AppxPackage" Publisher="CN=3D42CE8A-2E4C-4B8D-9D8F-538B946EF33B" Version="1.0.0.0" Language="1033" InstallDate="" OSVersionAtInstallTime="10.0.0.18362" RootDirPath="C:\Program Files\windowsapps\11128trevorxxxxh.alphanumericencoder_1.0.0.0_neutral__96t6tg2pngd06" Id="00007446137a9a57baa2d4d109548208621300000904" HiddenArp="false">
+        <Indicators>
+          <WindowsStoreAppManifestIndicators>
+            <PackageManifest PackageFullName="11128TrevorFrench.AlphanumericEncoder_1.0.0.0_neutral__96t6tg2pngd06">
+              <Package>
+                <Identity Name="11128TrevorFrench.AlphanumericEncoder" Version="1.0.0.0" Publisher="CN=3D42CE8A-2E4C-4B8D-9D8F-538B946EF33B" ProcessorArchitecture="neutral"></Identity>
+                <PhoneIdentity PhoneProductId="060806b8-bb21-4f00-9ce2-ef1b1f441762" PhonePublisherId="00000000-0000-0000-0000-000000000000"></PhoneIdentity>
+                <Properties>
+                  <DisplayName>Alphanumeric Encoder</DisplayName>
+                  <PublisherDisplayName>Trevor French</PublisherDisplayName>
+                  <Logo>images\storelogo.png</Logo>
+                </Properties>
+                <Dependencies>
+                  <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.15063.0" MaxVersionTested="10.0.17763.0"></TargetDeviceFamily>
+                </Dependencies>
+                <Resources>
+                  <Resource Language="EN-US"></Resource>
+                  <Resource Scale="200"></Resource>
+                </Resources>
+                <Applications>
+                  <Application Id="App" StartPage="index.html">
+                    <VisualElements DisplayName="Alphanumeric Encoder" Description="Alphanumeric Encoder is a message encryptor/decryptor which allows users to send and receive secret messages." BackgroundColor="transparent" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png" ForegroundText="light">
+                      <DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" Square310x310Logo="images\LargeTile.png" Square71x71Logo="images\SmallTile.png"></DefaultTile>
+                      <SplashScreen Image="images\splashscreen.png"></SplashScreen>
+                      <InitialRotationPreference>
+                        <Rotation Preference="portrait"></Rotation>
+                        <Rotation Preference="landscape"></Rotation>
+                        <Rotation Preference="portraitFlipped"></Rotation>
+                        <Rotation Preference="landscapeFlipped"></Rotation>
+                      </InitialRotationPreference>
+                    </VisualElements>
+                  </Application>
+                </Applications>
+                <Capabilities>
+                  <Capability Name="internetClient"></Capability>
+                </Capabilities>
+              </Package>
+            </PackageManifest>
+            <BundleManifest PackageFamilyName="11128TrevorFrench.AlphanumericEncoder_96t6tg2pngd06">
+              <Bundle SchemaVersion="3.0">
+                <Identity Name="11128TrevorFrench.AlphanumericEncoder" Publisher="CN=3D42CE8A-2E4C-4B8D-9D8F-538B946EF33B" Version="1.0.0.0"></Identity>
+                <Packages>
+                  <Package Type="application" Version="1.0.0.0" Architecture="neutral" FileName="App2_1.0.0.0_AnyCPU.appx" Offset="54" Size="82649">
+                    <Resources>
+                      <Resource Language="EN-US"></Resource>
+                      <Resource Scale="200"></Resource>
+                    </Resources>
+                  </Package>
+                  <Package Type="resource" Version="1.0.0.0" ResourceId="split.scale-100" FileName="App2_1.0.0.0_scale-100.appx" Offset="82784" Size="20722" Architecture="neutral">
+                    <Resources>
+                      <Resource Scale="100"></Resource>
+                    </Resources>
+                  </Package>
+                  <Package Type="resource" Version="1.0.0.0" ResourceId="split.scale-125" FileName="App2_1.0.0.0_scale-125.appx" Offset="103587" Size="28837" Architecture="neutral">
+                    <Resources>
+                      <Resource Scale="125"></Resource>
+                    </Resources>
+                  </Package>
+                  <Package Type="resource" Version="1.0.0.0" ResourceId="split.scale-150" FileName="App2_1.0.0.0_scale-150.appx" Offset="132505" Size="35271" Architecture="neutral">
+                    <Resources>
+                      <Resource Scale="150"></Resource>
+                    </Resources>
+                  </Package>
+                  <Package Type="resource" Version="1.0.0.0" ResourceId="split.scale-400" FileName="App2_1.0.0.0_scale-400.appx" Offset="167857" Size="130425" Architecture="neutral">
+                    <Resources>
+                      <Resource Scale="400"></Resource>
+                    </Resources>
+                  </Package>
+                </Packages>
+              </Bundle>
+            </BundleManifest>
+          </WindowsStoreAppManifestIndicators>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="0000da39a3ee5e6b4b0d3255bfef95601890afd80709">
+            <File Id="0000725a0fcbadc6f570d7de8a5b0397e4f6ccb651c0" Name="index.html" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="1188953236" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="C:\Program Files\windowsapps\11128trevorxxxxh.alphanumericencoder_1.0.0.0_neutral__96t6tg2pngd06\index.html" />
+            <File Id="00000b227ac4959b0afd60fc1918bc81ea173e8d7d8d" Name="main.js" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-1042803016" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="C:\Program Files\windowsapps\11128trevorxxxxh.alphanumericencoder_1.0.0.0_neutral__96t6tg2pngd06\js\main.js" />
+            <File Id="00004a84588654ecd0f36e29d585b46c630245fd1111" Name="resources.df4a21cb.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-26490814" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="C:\Program Files\windowsapps\11128trevorxxxxh.alphanumericencoder_1.0.0.0_neutral__96t6tg2pngd06\microsoft.system.package.metadata\resources.df4a21cb.pri" />
+            <File Id="0000e002b81c91e7fe88ec272eb25e15e64befb77282" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="1616399879" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="C:\Program Files\windowsapps\11128trevorxxxxh.alphanumericencoder_1.0.0.0_neutral__96t6tg2pngd06\resources.pri" />
+            <File Id="00004a84588654ecd0f36e29d585b46c630245fd1111" Name="S-1-5-21-3205689482-3412748365-3463162289-1001-MergedResources-0.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-26490814" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="C:\Program Files\windowsapps\11128trevorxxxxh.alphanumericencoder_1.0.0.0_neutral__96t6tg2pngd06\microsoft.system.package.metadata\s-1-5-21-3205689482-3412748365-3463162289-1001-mergedresources-0.pri" />
+          </Files>
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis ProgramId="00007446137a9a57baa2d4d109548208621300000904" AnalysisVersion="1.60" DictionaryVersion="3.4" Type="Package" Id="11128TrevorFrench.AlphanumericEncoder_1.0.0.0_neutral__96t6tg2pngd06">
+      <AitFile ErrorCode="0" Name="main.js" Id="00000b227ac4959b0afd60fc1918bc81ea173e8d7d8d">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="index.html" Id="0000725a0fcbadc6f570d7de8a5b0397e4f6ccb651c0" />
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>

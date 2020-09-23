@@ -1,0 +1,10 @@
+bld\ARM\Release\filemap.pri
+bld\ARM\Release\filemap.map.txt
+bld\ARM\Release\filemap.scale-100.pri
+bld\ARM\Release\filemap.scale-100.map.txt
+bld\ARM\Release\filemap.scale-125.pri
+bld\ARM\Release\filemap.scale-125.map.txt
+bld\ARM\Release\filemap.scale-150.pri
+bld\ARM\Release\filemap.scale-150.map.txt
+bld\ARM\Release\filemap.scale-400.pri
+bld\ARM\Release\filemap.scale-400.map.txt

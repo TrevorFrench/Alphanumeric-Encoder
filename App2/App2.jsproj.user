@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\Frenc\OneDrive\Desktop\assets\storelogo.scale-400.png</Source>
+    <SmallTileSource>C:\Users\Frenc\OneDrive\Desktop\assets\storelogo.scale-400.png</SmallTileSource>
+    <MediumTileSource>C:\Users\Frenc\OneDrive\Desktop\assets\storelogo.scale-400.png</MediumTileSource>
+    <WideTileSource>C:\Users\Frenc\OneDrive\Desktop\assets\storelogo.scale-400.png</WideTileSource>
+    <LargeTileSource>C:\Users\Frenc\OneDrive\Desktop\assets\storelogo.scale-400.png</LargeTileSource>
+    <AppIconSource>C:\Users\Frenc\OneDrive\Desktop\assets\storelogo.scale-400.png</AppIconSource>
+    <SplashScreenSource>C:\Users\Frenc\OneDrive\Desktop\assets\storelogo.scale-400.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\Frenc\OneDrive\Desktop\assets\storelogo.scale-400.png</PackageLogoSource>
+    <AppxPackageIsForStore>True</AppxPackageIsForStore>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxBuildConfigurationSelection>x86|x64|arm</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+  </PropertyGroup>
+</Project>
